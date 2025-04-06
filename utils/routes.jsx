@@ -1,4 +1,4 @@
-import { createBrowserRouter, redirect } from "react-router";
+import { createBrowserRouter, createHashRouter, redirect } from "react-router";
 
 import SignUpPage from "../src/Pages/SignUpPage";
 import AdminLayout from "../src/layouts/AdminLayout";
@@ -120,7 +120,7 @@ export const customerRoutes = [
 
 ]
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: '/',
     element: <CustomerLayout />,
